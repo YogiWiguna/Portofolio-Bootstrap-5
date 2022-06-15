@@ -1,0 +1,30 @@
+.jumbotron {
+  padding-top: 10rem;
+  background-color: #e2edff;
+}
+
+#portofolio {
+  background-color: #e2edff;
+}
+section {
+  padding-top: 5rem;
+}
+nav ul li a {
+  color: rgb(7, 7, 7);
+  text-decoration: none;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(32, 31, 31);
+  transition: width 0.3s;
+}
+nav ul li a:hover::after {
+  width: 50%;
+}
